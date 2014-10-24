@@ -6,6 +6,8 @@ public class Md5 {
 	private String text = null;
 	private String hash = null;
 
+	public Md5() {}
+	
 	public Md5(String text) {
 		this.text = text;
 	}
@@ -71,11 +73,14 @@ public class Md5 {
 		this.text = text;
 	}
 
-	public String getText() {
-		return text;
-	}
-
 	public String getHash() {
 		return hash;
+	}
+	
+	public static void main(String[] args) {
+		Md5 md5 = new Md5();
+		md5.setText("hello");
+		String s = md5.getMD5();
+		System.out.println(s);
 	}
 }

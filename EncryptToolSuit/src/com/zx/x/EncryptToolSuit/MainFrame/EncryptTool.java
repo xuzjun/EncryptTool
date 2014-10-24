@@ -3,8 +3,7 @@ package com.zx.x.EncryptToolSuit.MainFrame;
 public class EncryptTool {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		MainUI mainUI = new MainUI();
+		MainUI mainUI = new MainUI(70, 70, 400, 400);
 		mainUI.setVisible(true);
 	}
 }
